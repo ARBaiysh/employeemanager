@@ -50,7 +50,7 @@ public class EmployeeController {
     @Transactional
     public ResponseEntity<?> deleteEmployee(@PathVariable("id") Long id) {
         employeeService.deleteEmployee(id);
-        log.info("deleteEmployee id:XXX{}", id);
+        log.info("deleteEmployee id:{}", id);
         return new ResponseEntity<>(HttpStatus.OK);
     }
 }
