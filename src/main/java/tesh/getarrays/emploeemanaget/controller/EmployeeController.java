@@ -15,6 +15,7 @@ import java.util.List;
 @RequestMapping("/employee")
 @AllArgsConstructor
 @Slf4j
+@CrossOrigin()
 public class EmployeeController {
     private final EmployeeService employeeService;
 
